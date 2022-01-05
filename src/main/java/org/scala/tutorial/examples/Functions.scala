@@ -10,6 +10,8 @@ object Functions {
     println(addWithDefault(10))
     // changing order by using parameter names
     println(addWithDefault(b=1,a=0))
+
+    multipleArgs(2,3,4,5)
   }
 
   def add(a:Int,b:Int): Int={
@@ -22,4 +24,9 @@ object Functions {
    a+b
   }
 
+  def multipleArgs(args:Int*){
+    for(i <- args){
+      println(i)
+    }
+  }
 }
